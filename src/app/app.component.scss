@@ -1,0 +1,22 @@
+$baseColour: #000;
+$primaryColour: #fff;
+
+#text-feeder {
+    position: relative;
+    width: 0px;
+    border-style: none;
+    background-color: $primaryColour;
+    color: $primaryColour;
+    left: 2px;
+    text-indent: -20em;
+
+    animation: blinkingCursor 2s infinite;
+}
+
+@keyframes blinkingCursor {
+    0% { opacity: 0; }
+    25% { opacity: 0.5; }
+    50% { opacity: 1; }
+    25% { opacity: 0; }
+    0% { opacity: 0.5; }
+}
